@@ -1,9 +1,11 @@
 """
 Aplikasi deteksi gempa terkini
 """
-from gempaTerkini import ekstraksi_data, tampilkan_data
+import gempaTerkini as Gt
+import bs4
+import request
 
 if __name__ == '__main__':
     print('Aplikasi utama')
-    result = ekstraksi_data()
-    tampilkan_data(result)
+    result = Gt.ekstraksi_data()
+    Gt.tampilkan_data(result)

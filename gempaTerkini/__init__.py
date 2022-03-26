@@ -18,7 +18,7 @@ def ekstraksi_data():
 
     return hasil
 
-def tampilkan_data(result):
+def tampilkan_data(result) -> object:
     print("Gempa Terakhir berdasarkan BMKG")
     print(f"Tanggal {result['tanggal']}")
     print(f"Waktu {result['waktu']}")
